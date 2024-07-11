@@ -45,7 +45,7 @@ void generate_password(char* password, int length, char complexity) {
   password[length] = '\0'; // Terminate the string
 }
 
-int pass-gen(void) { /* main function */
+int pass_gen_main(void) { /* main function */
   char password[MAX_PASSWORD_LEN + 1];
   int length, complexity;
 
