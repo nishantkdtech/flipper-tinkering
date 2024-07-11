@@ -28,7 +28,7 @@ float calculate_lux(int raw_value) {
   return raw_value / conversion_factor;
 }
 
-int main(void) {
+int light_sense_main(void) {
   while (true) {
     int raw_value = read_light_value();
     float lux = calculate_lux(raw_value);
