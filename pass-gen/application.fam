@@ -1,0 +1,10 @@
+App(
+    appid="pass_gen",
+    name="Password Generator",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="pass_gen_main",
+    requires=["gui"],
+    stack_size=1 * 1024,
+    fap_icon="pass_gen_10px.png",
+    fap_category="GPIO",
+)
