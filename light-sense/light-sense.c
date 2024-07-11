@@ -44,3 +44,13 @@ int light_sense_main(void) {
 
   return 0;
 }
+
+
+// add ambient light sensor to generate number
+
+static bool lightmeter_custom_event_callback(void* context, uint32_t event) {
+    furi_assert(context);
+    LightMeterApp* app = context;
+
+    return scene_manager_handle_custom_event(app->scene_manager, event);
+}
