@@ -1,0 +1,10 @@
+App(
+    appid="light_sense",
+    name="Light Sensor",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="light_sense_main",
+    requires=["gui"],
+    stack_size=1 * 1024,
+    fap_icon="light_sense_10px.png",
+    fap_category="GPIO",
+)
